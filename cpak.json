@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
+  "manifest_version": "2.0",
+  "name": "Moonlight",
+  "description": "Stream games from a compatible host.",
+  "version": "6.1.0",
+  "image": "ghcr.io/containerpak/moonlight:main",
+  "binaries": [
+    "/usr/bin/moonlight"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/com.moonlight_stream.Moonlight.desktop"
+  ],
+  "dependencies": [
+
+  ],
+  "addons": [
+
+  ],
+  "idle_time": 0,
+  "override": {
+    "socketX11": true,
+    "socketWayland": true,
+    "socketPulseAudio": true,
+    "socketSessionBus": true,
+    "socketSystemBus": false,
+    "socketSshAgent": false,
+    "socketCups": false,
+    "socketGpgAgent": false,
+    "socketAtSpiBus": true,
+    "socketBluetooth": false,
+    "deviceDri": true,
+    "deviceKvm": false,
+    "deviceShm": true,
+    "deviceAlsa": false,
+    "deviceVideo": true,
+    "deviceFuse": false,
+    "deviceTun": false,
+    "deviceUsb": true,
+    "deviceAll": false,
+    "notification": true,
+    "openURI": true,
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
+    "env": [
+
+    ],
+    "network": true,
+    "process": false,
+    "userNamespaces": true,
+    "memoryMaxMB": 0,
+    "cpuQuota": 0,
+    "pidsMax": 0,
+    "asRoot": false,
+    "allowedHostCommands": [
+
+    ]
+  }
+}
