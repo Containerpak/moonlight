@@ -1,34 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Moonlight",
   "description": "Stream games from a compatible host.",
   "version": "6.1.0",
-  "image": "ghcr.io/containerpak/moonlight:main",
+  "image": "ghcr.io/containerpak/moonlight@sha256:3880a11d24a59478b04d6d82a62fc3d658cdacdd75b2e6419553a98d930219a2",
   "binaries": [
     "/usr/bin/moonlight"
   ],
   "desktop_entries": [
     "/usr/share/applications/com.moonlight_stream.Moonlight.desktop"
   ],
-  "dependencies": [
-
-  ],
-  "addons": [
-
-  ],
+  "dependencies": [],
+  "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -46,18 +37,13 @@
         "access": "read-write"
       }
     ],
-    "env": [
-
-    ],
+    "env": [],
     "network": true,
     "process": false,
     "userNamespaces": true,
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": [
-
-    ]
+    "asRoot": false
   }
 }
