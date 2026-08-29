@@ -4,7 +4,7 @@
   "name": "Moonlight",
   "description": "Stream games from a compatible host.",
   "version": "6.1.0",
-  "image": "ghcr.io/containerpak/moonlight@sha256:27b320c71647600beb66352c9179f8b1e34bd558268080d3dc6664c417659602",
+  "image": "ghcr.io/containerpak/moonlight@sha256:043741f420841c25622ebcef2447256c31cc72a3ebeee2a92529e8863e93a929",
   "binaries": [
     "/usr/bin/moonlight"
   ],
